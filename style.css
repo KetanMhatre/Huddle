@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+.container{
+    background-image: url(/images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    height: 100vh;
+    
+}
+.header{
+    height: 150px;
+}
+#logo img{
+    margin-top: 70px;
+    margin-left: 130px;
+}
+.maincontent #left{
+    width: 50%;
+    height:70vh;
+    float: left;
+}
+
+#left img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.maincontent #right{
+    margin-top: 80px;
+  float: left;
+   width: 49%;
+}
+.maincontent #right{
+  height:600px;
+  /* border:1px solid red; */
+}
+#right h1{
+    max-width: 300px;
+    font-size: 30px;
+    font-family: Poppins,serif;
+    color: white;
+    font-weight: 600;
+    
+}
+#right p{
+    margin-top: 30px;
+    max-width: 600px;
+    font-size: 20px;
+    font-family:Open+Sans, serif;
+    color: white;
+    line-height: 120%;
+}
+#right input{
+    font-size: 18px;
+    border: 2px solid white;
+    margin-top: 30px;
+    border-radius: 30px;
+    width: 150px;
+    padding: 15px;
+    background-color: white;
+    color:hsl(257, 40%, 49%);
+}
+#right input:hover{
+    background-color:  hsl(300, 69%, 71%);
+    color: white;
+    border: none;
+}
+.social{
+
+    display: inline-block;
+    width: 100%;
+   
+}
+.social img{
+    float: right;
+    border: 1px solid black;
+    border-radius: 50%;
+  padding: 5px;
+  width: 35px;
+    display: inline;
+    margin-right: 10px;
+   
+}
+.social img:hover{
+    border: 1px solid hsl(300, 69%, 71%); 
+}
+
+.creds{
+    /* margin-top: 10px; */
+    text-align: center;
+   
+}
+.creds a{
+    color:rgb(244, 219, 1);
+}
+@media screen and (max-width:750px) {
+    .header{
+        height: 10vh;
+        
+    }
+    #logo img{
+        
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .maincontent{
+        height: 60vh;
+    }
+    .maincontent #left{
+    
+        width: 100%;
+        height: fit-content;
+    }
+    #left img{
+        padding-left: 40px;
+        height: auto;
+        width: 80%;
+    }
+    .maincontent #right{
+        width: 100%;
+        margin-top:-5px;
+       height:fit-content;
+       text-align: center;
+       /* border: 2px solid yellow; */
+       
+    }
+    
+    #right h1,p,input{
+        margin: 0 auto;
+    }
+    #right h1{
+        max-width: 250px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    #right p{
+        /* margin-top: 10px; */
+        max-width: 400px;
+    }
+    #right input{
+
+        font-size: 15px;
+        border: 2px solid white;
+        border-radius: 30px;
+        width: 100px;
+        padding: 10px;
+        margin-bottom: 20px;
+        
+    }
+    .social{
+        display: block;
+        padding: 2px;
+        width: fit-content;
+        margin-bottom: 20px;
+        margin: 0 auto;
+      
+    }
+    .social img{
+     width: 30px;
+      display: inline;
+    }
+
+    .creds{
+       clear: both;
+       padding-top: 20px; 
+    }
+}
